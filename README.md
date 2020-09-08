@@ -17,7 +17,7 @@ Game Monopoly for CS big Homework.
 ## 待完成：
 
 ### 地图制作：
-每一格可以视为一个building（不管是不是真的有建筑）。所有building可以组成一个地图map。
+每一格可以视为一个class node，（不管是不是真的有建筑）。所有node可以组成一个地图map。
 + [ ] 是否图形化表示
 + [ ] 人的表示及重合的处理
 + [ ] 分叉路
@@ -30,14 +30,14 @@ Game Monopoly for CS big Homework.
 + [ ] 是否因卡片而被持续影响？
 
 ### 建筑or地标or普通点：
-建筑也可在地图上表示为class building。如果条件允许可以设定为**循环队列**（如果不是单条路线则取消，需要记录每个building能到达的点（即后继））。
+建筑也可在地图上表示为class building:public node；地标可以作为基本的building；具有特殊点的可以作为class specialPosition:public building。如果条件允许可以设定为**循环队列**（如果不是单条路线则取消，需要记录每个building能到达的点（即后继））。
 + [ ] 建筑的状态（空置？被买了，被谁买了？被卖了，被谁卖了？）
-+ [ ] class player 和 class building 的互动
++ [ ] class player 和 class node 的互动
 
 ### 卡片系统及随机事件：
 卡片可以由class card处理，考虑卡片是否随机选择？能否重复选择？是否用完？
 + [ ] card与player的对接
-+ [ ] card与building的对接
++ [ ] card与node的对接
 + [ ] card与action的对接
 
 ### 特殊事件：
