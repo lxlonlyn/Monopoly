@@ -8,8 +8,10 @@ int main(){
     system("cls");
     cout<<"欢迎游玩本游戏！\n";
     cout<<"请输入游玩人数（最大为 4 ）:";
-    char ch=getchar();
-    while (ch<'0'||ch>'9') ch=getchar();
+    char ch=getchar(); int f=1;
+    while (ch<'0'||ch>'9'){
+        if (ch=='-') f=-1; ch=getchar();
+    }
     int n=0; //cin>>n;
     while (ch>='0'&&ch<='9'){
         n=(n<<1)+(n<<3)+ch-'0'; ch=getchar();
@@ -18,7 +20,7 @@ int main(){
         if (n<1) cout<<"你确定这里有人吗？\n";
         if (n==1) cout<<"一个人也是挺孤独的呢。\n";
         if (n>4) cout<<"最大 4 个人。\n";
-        ch=getchar();
+        ch=getchar(); f=1;
         while (ch<'0'||ch>'9') ch=getchar();
         n=0; //cin>>n;
         while (ch>='0'&&ch<='9'){
