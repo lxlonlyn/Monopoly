@@ -14,25 +14,19 @@ Game Monopoly for CS big Homework.
 
 ## 设计细节：
 
-~~请发issue~~
-
-## 待完成：
-
 ### 地图制作：
 每一格可以视为一个class node，（不管是不是真的有建筑）。所有node可以组成一个地图map。
-+ [ ] 是否图形化表示
 + [ ] 人的表示及重合的处理
-+ [ ] 分叉路
 + [ ] 特殊建筑的表示
 
 ### 玩家：
 玩家可设计成class player
 + [ ] 玩家状态（进监狱？正常？破产？又在监狱又破产？）
-+ [ ] 资金不够卖房子（卖哪个？），钱够是否买房子（交互系统是否图形化？）
++ [ ] 资金不够卖房子（卖哪个？），钱够是否买房子
 + [ ] 是否因卡片而被持续影响？
 
 ### 建筑or地标or普通点：
-建筑也可在地图上表示为class building:public node；地标可以作为基本的building；具有特殊点的可以作为class specialPosition:public building。如果条件允许可以设定为**循环队列**（如果不是单条路线则取消，需要记录每个building能到达的点（即后继））。
+建筑也可在地图上表示为class building:public node；地标可以作为基本的building；具有特殊点的可以作为class specialPosition:public building。
 + [ ] 建筑的状态（空置？被买了，被谁买了？被卖了，被谁卖了？）
 + [ ] class player 和 class node 的互动
 
@@ -47,5 +41,5 @@ Game Monopoly for CS big Homework.
 + [ ] 破产
 + [ ] 进监狱
 + [ ] 进医院
-+ [ ] ...
++ [ ] 游戏开始与结束
 
