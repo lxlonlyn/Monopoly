@@ -5,7 +5,11 @@ Game Monopoly for CS big Homework.
 
 [Pull request教程](https://www.zhihu.com/question/21682976)
 
-**一个小建议：除main.cpp外，类定义尽量用.h，类实现尽量用.cpp，类定义+实现（比如简单的基类派生）建议用.hpp**
+**main.cpp放在最外部**
+
+**在source下放源文件及类的实现（.cpp,.hpp）**
+
+**在class下放类（.class）**
 
 # 整体大概描述
 
