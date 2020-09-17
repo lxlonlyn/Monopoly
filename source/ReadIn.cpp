@@ -1,12 +1,14 @@
 /*******************************************
 用来更加严格地读入数据
 *******************************************/
+#ifndef _READIN_CPP_
+#define _READIN_CPP_
 #include <iostream>
 #include <string>
 using namespace std;
 
 //读入数字：无效返回-239239239
-int ReadNum() {
+static int ReadNum() {
     int res = 0, len, f = 1;
     string s; 
     getline(cin, s); len = s.length();
@@ -21,3 +23,4 @@ int ReadNum() {
     }
     return res * f;
 }
+#endif

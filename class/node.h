@@ -1,17 +1,14 @@
+/*************************************
+class CNode: Nodes to be painted on map
+Refer house.h to view point not to be painted
+*************************************/
 #ifndef _NODE_H_
 #define _NODE_H_
-#define NULL 0
 class CNode{
 private:
-    int Position;
-    CNode *Nxt;
+    bool PlayerOnMap[4];
+    int CoveredLand[4];
 public:
-    CNode(int _a){
-        Position = _a;
-        *Nxt = NULL;
-    }
-    int GetPosition(){
-        return Position;
-    }
+    
 };
 #endif
