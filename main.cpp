@@ -63,14 +63,14 @@ int main(){
     // 9/18 17:22 
     // 现给出house和node的逻辑对应关系
     // 下面的代码不能跑
-    CHouse HouseArray[41];  // 1 to 40
-    CNode NodeArray[12][12];    // 从1，1到11，11；
-    for(int i = 1; i <= 40; i++) {
-        if(i <= 10) HouseArray[i] = NodeArray[1][i];
-        else if(i <= 20) HouseArray[i] = NodeArray[i-10][11];
-        else if(i <= 30) HouseArray[i] = NodeArray[11][-i+32];
-        else HouseArray[i] = NodeArray[-i+42][1];
-    }
+    // CHouse HouseArray[41];  // 1 to 40
+    // CNode NodeArray[12][12];    // 从1，1到11，11；
+    //for(int i = 1; i <= 40; i++) {
+    //    if(i <= 10) HouseArray[i] = NodeArray[1][i];
+    //    else if(i <= 20) HouseArray[i] = NodeArray[i-10][11];
+    //    else if(i <= 30) HouseArray[i] = NodeArray[11][-i+32];
+    //    else HouseArray[i] = NodeArray[-i+42][1];
+    //}
 
 
     //StartGame: Construct player -> print map
