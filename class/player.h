@@ -1,6 +1,5 @@
 #ifndef _PLAY_H_
 #define _PLAY_H_
-const int MapSize = 1010;
 #include <vector>
 #include <cstring>
 #include <string>
